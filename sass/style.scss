@@ -1,3 +1,4 @@
+@import './colors';
 $bg-color: gold;
 
 * {
@@ -23,13 +24,13 @@ body {
 }
 
 .one {
-    background-color: $bg-color;
+    background-color: $red;
 }
 
 .two {
-    background-color: $bg-color;
+    background-color: $green;
 }
 
 .three {
-    background-color: $bg-color;
+    background-color: $blue;
 }
