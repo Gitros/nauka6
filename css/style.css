@@ -1,1 +1,55 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: yellow;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: yellow;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: yellow;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+section {
+  height: 25%;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.odd {
+  background-color: skyblue;
+}
+
+.even {
+  background-color: rgb(51, 108, 131);
+}/*# sourceMappingURL=style.css.map */
