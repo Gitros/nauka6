@@ -11,7 +11,17 @@ body {
 
 .square {
   margin: 30px;
-  width: 200px;
-  height: 200px;
   border: 5px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: gold;
+}
+
+.success {
+  background-color: lime;
+}
+
+.warning {
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */
