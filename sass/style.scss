@@ -1,57 +1,37 @@
-@use '_reset.scss';
-@use '_colors.scss' as c;
+@import './reset';
 
+$heading-color: gold;
+$oddSection: deepskyblue;
+$evenSection: dodgerblue;
 
-@mixin circle {
-    height: 100px;
-    width: 100px;
-    margin: 30px auto;
-    background-color: lime;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-html {
-    font-size: 10px;
-}
-
-main {
+body {
     font-family: sans-serif;
-    text-align: center;
-    height: 100vh;
 }
 
 h1 {
     font-size: 3rem;
-    color: c.$yellow;
-}
-
-h2 {
-    font-size: 2.4rem;
-    color: c.$yellow;
-}
-
-h3 {
-    font-size: 1.8rem;
-    color: c.$yellow;
-}
-
-p {
-    font-size: 1.6rem;
-}
-
-section {
-    height: 25%;
+    color: $heading-color;
 }
 
 .circle {
     @include circle;
 }
 
-.odd {
-    background-color: map-get(c.$colors, odd);
+h2 {
+    font-size: 2.4em;
+    color: $heading-color;
 }
 
-.even {
-    background-color: map-get(c.$colors, even);
+sectio {
+    height: 25vh;
+    text-align: center;
+}
+
+@mixin circle {
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
 }
