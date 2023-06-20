@@ -1,0 +1,26 @@
+$gold: gold;
+$red: red;
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    border: 3px solid black;
+}
+
+.color1 {
+    background-color: $gold;
+}
+
+.color2 {
+    background-color: $red;
+}
