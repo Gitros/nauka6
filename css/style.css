@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,19 +10,4 @@ body {
   font-size: 30px;
   color: #fff;
   background-color: #333;
-}
-
-p {
-  margin: 100px;
-  text-align: center;
-}
-
-p::before {
-  content: "Cześć ";
-  color: lime;
-}
-
-p::after {
-  content: "! 😎";
-  color: lime;
 }/*# sourceMappingURL=style.css.map */

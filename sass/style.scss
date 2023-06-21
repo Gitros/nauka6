@@ -7,18 +7,3 @@ body {
     color: #fff;
     background-color: #333;
 }
-
-p {
-    margin: 100px;
-    text-align: center;
-}
-
-p::before {
-    content: 'Cześć ';
-    color: lime;
-}
-
-p::after {
-    content: '! 😎';
-    color: lime;
-}
