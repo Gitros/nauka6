@@ -12,3 +12,52 @@ body {
     background-color: #333;
     overflow: hidden;
 }
+
+.sky {
+    position: relative;
+    background-color: skyblue;
+    height: 60vh;
+
+    .sun {
+        position: absolute;
+        background-color: yellow;
+        @include size(90px);
+        border-radius: 50%;
+        left: 100px;
+        top: 100px;
+        box-shadow: 0 0 70px yellow;
+    }
+}
+
+
+
+.ground {
+    position: relative;
+    height: 40vh;
+    background-color: #403535;
+
+    .grass {
+        position: absolute;
+        top: 0;
+        background-color: green;
+        height: 200px;
+        width: 100%;
+    }
+
+    .road {
+        position: absolute;
+        top: 20px;
+        background-color: gray;
+        height: 120px;
+        width: 100%;
+
+        .car {
+            position: relative;
+            bottom: 10px;
+            background-color: rgb(201, 95, 24);
+            width: 200px;
+            height: 100px;
+        }
+    }
+
+}
