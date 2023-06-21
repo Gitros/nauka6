@@ -12,22 +12,13 @@ body {
   background-color: #333;
 }
 
-div {
-  margin: 50px;
+table,
+tr,
+td {
+  border: 1px solid black;
 }
 
-p:first-child {
-  color: lime;
-}
-
-p:last-child {
-  color: aqua;
-}
-
-p:first-of-type {
-  color: royalblue;
-}
-
-p:last-of-type {
-  color: brown;
+td {
+  width: 300px;
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */
