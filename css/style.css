@@ -4,52 +4,30 @@
   padding: 0;
 }
 
-html {
-  font-size: 10px;
+body {
+  margin: 50px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
 }
 
-main {
-  font-family: sans-serif;
-  text-align: center;
-  height: 100vh;
+div {
+  margin: 50px;
 }
 
-h1 {
-  font-size: 3rem;
-  color: yellow;
+p:first-child {
+  color: lime;
 }
 
-h2 {
-  font-size: 2.4rem;
-  color: yellow;
+p:last-child {
+  color: aqua;
 }
 
-h3 {
-  font-size: 1.8rem;
-  color: yellow;
+p:first-of-type {
+  color: royalblue;
 }
 
-p {
-  font-size: 1.6rem;
-}
-
-section {
-  height: 25%;
-}
-
-.circle {
-  height: 100px;
-  width: 100px;
-  margin: 30px auto;
-  background-color: lime;
-  border: 3px solid black;
-  border-radius: 50%;
-}
-
-.odd {
-  background-color: skyblue;
-}
-
-.even {
-  background-color: rgb(51, 108, 131);
+p:last-of-type {
+  color: brown;
 }/*# sourceMappingURL=style.css.map */
