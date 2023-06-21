@@ -13,25 +13,51 @@ body {
 }
 
 .square {
-  height: 400px;
-  width: 400px;
-  background-color: gold;
-  border: 3px solid black;
-  animation: color 2s ease-in-out 2s 3;
-  animation-direction: reverse;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  animation: square 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-@keyframes color {
+.circle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: green;
+  animation: circle 2s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes square {
   0% {
-    width: 400px;
-    background-color: gold;
+    width: 300px;
+    background-color: red;
   }
+
   50% {
-    width: 800px;
-    background-color: royalblue;
+    width: 600px;
   }
+
   100% {
-    width: 200px;
-    background-color: lime;
+    width: 300px;
+    height: 600px;
+    background-color: gold;
+
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+@keyframes circle {
+  0% {
+    width: 300px;
+    background-color: green;
+  }
+
+  100% {
+    background-color: blue;
+  }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
