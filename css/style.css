@@ -48,9 +48,45 @@ body {
   width: 100%;
 }
 .ground .road .car {
-  position: relative;
-  bottom: 10px;
-  background-color: rgb(201, 95, 24);
+  position: absolute;
+  top: -15px;
+  left: 200px;
+  height: 70px;
+  width: 150px;
+  background-color: tomato;
   width: 200px;
   height: 100px;
+  border-radius: 15px;
+}
+.ground .road .car .wheel {
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px dashed #999;
+}
+.ground .road .car .front-wheel {
+  right: 8px;
+  z-index: 1;
+}
+.ground .road .car .rear-wheel {
+  left: 8px;
+}
+.ground .road .car::before,
+.ground .road .car::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 35px;
+  background-color: tomato;
+}
+.ground .road .car::after {
+  right: -20px;
+  border-top-right-radius: 10px;
+}
+.ground .road .car::before {
+  left: -20px;
 }/*# sourceMappingURL=style.css.map */

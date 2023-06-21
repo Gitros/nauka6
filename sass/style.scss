@@ -52,11 +52,54 @@ body {
         width: 100%;
 
         .car {
-            position: relative;
-            bottom: 10px;
-            background-color: rgb(201, 95, 24);
+            position: absolute;
+            top: -15px;
+            left: 200px;
+            height: 70px;
+            width: 150px;
+            background-color: tomato;
             width: 200px;
             height: 100px;
+            border-radius: 15px;
+
+            .wheel {
+                position: absolute;
+                bottom: 0;
+                width: 35px;
+                height: 35px;
+                background-color: black;
+                border-radius: 50%;
+                border: 2px dashed #999;
+            }
+
+            .front-wheel {
+                right: 8px;
+                z-index: 1;
+            }
+
+            .rear-wheel {
+                left: 8px;
+            }
+
+        }
+
+        .car::before,
+        .car::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            height: 35px;
+            background-color: tomato;
+        }
+
+        .car::after {
+            right: -20px;
+            border-top-right-radius: 10px;
+        }
+
+        .car::before {
+            left: -20px;
         }
     }
 
