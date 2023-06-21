@@ -1,36 +1,36 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 50px;
-  font-family: "Montserrat", "sans-serif";
-  font-size: 30px;
-  color: #fff;
-  background-color: #333;
+    margin: 50px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 30px;
+    color: #fff;
+    background-color: #333;
 }
 
-table,
-tr,
-td {
-  border: 1px solid black;
+li:nth-child(2n) {
+    color: lime;
 }
 
-td {
-  width: 300px;
-  height: 100px;
+span:first-of-type {
+    color: yellow;
 }
 
-tr:nth-child(even) {
-  background-color: aqua;
+.test p:first-child {
+    color: brown;
 }
 
-tr:nth-child(odd) {
-  background-color: aquamarine;
+.test p:last-child {
+    color: brown;
 }
 
-p:nth-child(5n+3) {
-  color: lime;
-}/*# sourceMappingURL=style.css.map */
+.title:hover {
+    color: aqua;
+    transition: 2s;
+}
+
+/*# sourceMappingURL=style.css.map */

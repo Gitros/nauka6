@@ -8,25 +8,10 @@ body {
     background-color: #333;
 }
 
-table,
-tr,
-td {
-    border: 1px solid black;
-}
-
-td {
-    width: 300px;
-    height: 100px;
-}
-
-tr:nth-child(even) {
-    background-color: aqua;
-}
-
-tr:nth-child(odd) {
-    background-color: aquamarine;
-}
-
-p:nth-child(5n+3) {
+li:nth-child(2n) {
     color: lime;
+}
+
+span:first-child {
+    color: yellow;
 }
