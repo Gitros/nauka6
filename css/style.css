@@ -1,36 +1,13 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 50px;
-    font-family: "Montserrat", "sans-serif";
-    font-size: 30px;
-    color: #fff;
-    background-color: #333;
-}
-
-li:nth-child(2n) {
-    color: lime;
-}
-
-span:first-of-type {
-    color: yellow;
-}
-
-.test p:first-child {
-    color: brown;
-}
-
-.test p:last-child {
-    color: brown;
-}
-
-.title:hover {
-    color: aqua;
-    transition: 2s;
-}
-
-/*# sourceMappingURL=style.css.map */
+  margin: 50px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+}/*# sourceMappingURL=style.css.map */
