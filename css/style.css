@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Montserrat", "sans-serif";
-  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
   color: #fff;
   background-color: #333;
   overflow: hidden;
@@ -14,68 +14,59 @@ body {
 
 .sky {
   position: relative;
-  background-color: skyblue;
   height: 60vh;
+  background-color: royalblue;
+  animation: sky 8s linear infinite;
 }
-.sky .sun {
+
+.sun {
   position: absolute;
-  background-color: yellow;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
+  top: 50px;
   left: 100px;
-  top: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: orange;
   box-shadow: 0 0 70px yellow;
+  animation: sun 8s infinite linear;
 }
 
 .ground {
   position: relative;
+  bottom: 0;
   height: 40vh;
-  background-color: #403535;
+  background-color: #4a3535;
 }
-.ground .grass {
+
+.grass {
   position: absolute;
   top: 0;
-  background-color: green;
   height: 200px;
   width: 100%;
+  background-color: lime;
 }
-.ground .road {
+
+.road {
   position: absolute;
-  top: 20px;
-  background-color: gray;
+  top: 30px;
   height: 120px;
   width: 100%;
+  background-color: gray;
 }
-.ground .road .car {
+
+.car {
   position: absolute;
   top: -15px;
   left: 200px;
   height: 70px;
   width: 150px;
   background-color: tomato;
-  width: 200px;
-  height: 100px;
   border-radius: 15px;
+  animation: car 8s ease-in infinite;
 }
-.ground .road .car .wheel {
-  position: absolute;
-  bottom: 0;
-  width: 35px;
-  height: 35px;
-  background-color: black;
-  border-radius: 50%;
-  border: 2px dashed #999;
-}
-.ground .road .car .front-wheel {
-  right: 8px;
-  z-index: 1;
-}
-.ground .road .car .rear-wheel {
-  left: 8px;
-}
-.ground .road .car::before,
-.ground .road .car::after {
+
+.car::after,
+.car::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -83,10 +74,95 @@ body {
   height: 35px;
   background-color: tomato;
 }
-.ground .road .car::after {
+
+.car::after {
   right: -20px;
   border-top-right-radius: 10px;
 }
-.ground .road .car::before {
+
+.car::before {
   left: -20px;
+}
+
+.wheels {
+  position: absolute;
+  bottom: -10px;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px dashed #999;
+  animation: wheels 2s infinite linear;
+}
+
+.front-wheel {
+  right: 8px;
+  z-index: 1;
+}
+
+.rear-wheel {
+  left: 8px;
+}
+
+.window {
+  position: absolute;
+  top: 5px;
+  height: 30px;
+  width: 50px;
+  background-color: blue;
+}
+
+.front-window {
+  right: 0;
+  border-top-right-radius: 9px;
+}
+
+.rear-window {
+  left: 0;
+  border-top-left-radius: 9px;
+}
+
+@keyframes sun {
+  0% {
+    top: 1000px;
+  }
+  40% {
+    top: 50px;
+  }
+  60% {
+    top: 50px;
+  }
+  100% {
+    top: 1000px;
+  }
+}
+@keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1500px;
+  }
+}
+@keyframes wheels {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sky {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: black;
+  }
 }/*# sourceMappingURL=style.css.map */
