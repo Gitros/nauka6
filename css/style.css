@@ -20,6 +20,18 @@ body {
   border: 3px solid black;
 }
 
-section {
+.one {
   display: flex;
+  flex-direction: row;
+}
+
+.two {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.three {
+  display: flex;
+  flex-direction: column-reverse;
 }/*# sourceMappingURL=style.css.map */
