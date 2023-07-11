@@ -11,20 +11,17 @@ body {
 }
 
 section {
-  display: flex;
   height: 600px;
   background-color: #678;
-  /* align-items: flex-start; */
-  /* align-items: flex-end; */
-  /* align-items: center; */
-  /* align-items: baseline; */
-
+  display: flex;
+  align-content: stretch;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-around;
 }
 
 .square {
-  width: 20%;
-  /* height: 200px; */
-  /* line-height: 200px; */
+  width: 25%;
   text-align: center;
 }
 
@@ -42,6 +39,4 @@ section {
 
 .four {
   background-color: tomato;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
