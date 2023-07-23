@@ -11,17 +11,15 @@ body {
 }
 
 section {
-  height: 600px;
-  background-color: #678;
-  display: flex;
-  align-content: stretch;
-  align-content: flex-end;
-  align-content: center;
-  align-content: space-around;
+  margin: 20px 0;
+  height: 400px;
+  background-color: #789;
 }
 
 .square {
-  width: 25%;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
   text-align: center;
 }
 
@@ -39,4 +37,26 @@ section {
 
 .four {
   background-color: tomato;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.third {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
