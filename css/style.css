@@ -12,9 +12,11 @@ body {
 
 section {
   display: flex;
+  flex-direction: column;
 }
 
 .square {
+  flex-basis: 200px;
   width: 150px;
   height: 150px;
   line-height: 150px;
