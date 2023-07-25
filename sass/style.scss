@@ -1,22 +1,25 @@
-@import 'reset';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
+    margin: 50px;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 section {
     display: flex;
-    align-items: flex-end;
-    height: 400px;
+    margin: 20px 0;
+    height: 300px;
     border: 5px solid black;
 }
 
 .square {
     width: 200px;
-    height: 200px;
-    line-height: 200px;
     text-align: center;
 }
 
@@ -26,7 +29,6 @@ section {
 
 .two {
     background-color: lime;
-    align-self: center;
 }
 
 .three {
@@ -35,4 +37,53 @@ section {
 
 .four {
     background-color: tomato;
+}
+
+.first {
+    flex-direction: column;
+
+    .two {
+        flex-grow: 1;
+    }
+
+    .four {
+        flex-grow: 1;
+    }
+}
+
+.second {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.third {
+    .one {
+        order: 4;
+        flex-grow: 1;
+    }
+
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: -1;
+    }
+
+    .four {
+        flex-grow: 3;
+    }
+}
+
+.fourth {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+
+    .two {
+        align-self: start;
+    }
+
+    .three {
+        align-self: center;
+    }
 }
