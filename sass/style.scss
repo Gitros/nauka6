@@ -7,9 +7,7 @@ body {
 }
 
 section {
-    margin: 20px 0;
-    height: 400px;
-    background-color: #789;
+    display: flex;
 }
 
 .square {
@@ -33,26 +31,4 @@ section {
 
 .four {
     background-color: tomato;
-}
-
-.first {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.second {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.third {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
 }
