@@ -8,11 +8,9 @@ body {
 
 section {
     display: flex;
-    flex-direction: column;
 }
 
 .square {
-    flex-basis: 200px;
     width: 150px;
     height: 150px;
     line-height: 150px;
@@ -21,6 +19,7 @@ section {
 
 .one {
     background-color: gold;
+    order: 1;
 }
 
 .two {
@@ -33,4 +32,5 @@ section {
 
 .four {
     background-color: tomato;
+    order: 2;
 }
